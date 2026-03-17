@@ -1,0 +1,363 @@
+
+*** Running vivado
+    with args -log LAB2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LAB2.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed May 28 15:21:02 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source LAB2.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/utils_1/imports/synth_1/LAB2.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/utils_1/imports/synth_1/LAB2.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top LAB2 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23596
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.055 ; gain = 468.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LAB2' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:17]
+INFO: [Synth 8-3491] module 'mpg' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/mpg.vhd:28' bound to instance 'mpg_inst' of component 'mpg' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'mpg' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/mpg.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'mpg' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/mpg.vhd:36]
+INFO: [Synth 8-3491] module 'seven_seg_display' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/seven_seg_display.vhd:48' bound to instance 'seven_seg_disp_inst' of component 'seven_seg_display' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_display' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/seven_seg_display.vhd:57]
+WARNING: [Synth 8-614] signal 'digits' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/seven_seg_display.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_display' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/seven_seg_display.vhd:57]
+INFO: [Synth 8-3491] module 'inst_fetch' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/inst_fetch.vhd:6' bound to instance 'infe' of component 'inst_fetch' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'inst_fetch' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/inst_fetch.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'inst_fetch' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/inst_fetch.vhd:23]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/control_unit.vhd:6' bound to instance 'inst_cu' of component 'control_unit' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/control_unit.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/control_unit.vhd:23]
+INFO: [Synth 8-3491] module 'instr_decode' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/instr_decode.vhd:6' bound to instance 'instr_decode_inst' of component 'instr_decode' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'instr_decode' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/instr_decode.vhd:25]
+INFO: [Synth 8-3491] module 'reg_file' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/reg_file.vhd:7' bound to instance 'inst_rf' of component 'reg_file' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/instr_decode.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/reg_file.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/reg_file.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'instr_decode' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/instr_decode.vhd:25]
+INFO: [Synth 8-3491] module 'exec_unit' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/exec_unit.vhd:6' bound to instance 'exec_unit_inst' of component 'exec_unit' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'exec_unit' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/exec_unit.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'exec_unit' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/exec_unit.vhd:25]
+INFO: [Synth 8-3491] module 'memory_unit' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/memory_unit.vhd:8' bound to instance 'inst_mu' of component 'memory_unit' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'memory_unit' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/memory_unit.vhd:22]
+WARNING: [Synth 8-5640] Port 'en' is missing in component declaration [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/memory_unit.vhd:29]
+INFO: [Synth 8-3491] module 'ram_mem' declared at 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/ram_mem.vhd:8' bound to instance 'inst_ram' of component 'ram_mem' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/memory_unit.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'ram_mem' [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/ram_mem.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ram_mem' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/ram_mem.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'memory_unit' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/memory_unit.vhd:22]
+WARNING: [Synth 8-614] signal 's_id_out_ext_imm' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:253]
+WARNING: [Synth 8-614] signal 's_eu_out_alu_res' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:253]
+WARNING: [Synth 8-614] signal 's_mu_out_mem_data' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:253]
+WARNING: [Synth 8-614] signal 's_wb_out_wd' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:253]
+WARNING: [Synth 8-614] signal 's_id_out_ext_imm' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:268]
+WARNING: [Synth 8-614] signal 's_eu_out_alu_res' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:268]
+WARNING: [Synth 8-614] signal 's_mu_out_mem_data' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:268]
+WARNING: [Synth 8-614] signal 's_wb_out_wd' is read in the process but is not in the sensitivity list [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:268]
+INFO: [Synth 8-256] done synthesizing module 'LAB2' (0#1) [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/sources_1/new/LAB2.vhd:17]
+WARNING: [Synth 8-3917] design LAB2 has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[8] driven by constant 0
+WARNING: [Synth 8-7129] Port en in module ram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[15] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[14] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[13] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[12] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[11] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[10] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[9] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[8] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[7] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[6] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[5] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alu_res_in[4] in module memory_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa in module exec_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[15] in module instr_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[14] in module instr_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[13] in module instr_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module LAB2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.715 ; gain = 577.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.715 ; gain = 577.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.715 ; gain = 577.738
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1136.715 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LAB2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LAB2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1211.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1211.359 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1211.359 ; gain = 652.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1211.359 ; gain = 652.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1211.359 ; gain = 652.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1211.359 ; gain = 652.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
++---Muxes : 
+	 257 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design LAB2 has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[8] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design LAB2 has port led[1] driven by constant 0
+WARNING: [Synth 8-7129] Port sw[15] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module LAB2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module LAB2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1211.359 ; gain = 652.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                             | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------------------+-----------+----------------------+----------------+
+|LAB2        | inst_mu/inst_ram/ram_reg               | Implied   | 16 x 16              | RAM16X1S x 16  | 
+|LAB2        | instr_decode_inst/inst_rf/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6     | 
++------------+----------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1324.832 ; gain = 765.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 1366.570 ; gain = 807.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                             | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------------------+-----------+----------------------+----------------+
+|LAB2        | inst_mu/inst_ram/ram_reg               | Implied   | 16 x 16              | RAM16X1S x 16  | 
+|LAB2        | instr_decode_inst/inst_rf/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6     | 
++------------+----------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 1366.570 ; gain = 807.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    16|
+|3     |LUT1     |    11|
+|4     |LUT2     |     9|
+|5     |LUT3     |    19|
+|6     |LUT4     |    28|
+|7     |LUT5     |    34|
+|8     |LUT6     |   111|
+|9     |MUXF7    |     2|
+|10    |RAM16X1S |     2|
+|11    |RAM32M   |     6|
+|12    |FDRE     |    38|
+|13    |IBUF     |     9|
+|14    |OBUF     |    31|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1564.906 ; gain = 931.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1564.906 ; gain = 1005.930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1574.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+Synth Design complete | Checksum: 33540091
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:50 . Memory (MB): peak = 1577.762 ; gain = 1225.273
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1577.762 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Paula/Desktop/CA/project_LAB2/project_LAB2.runs/synth_1/LAB2.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file LAB2_utilization_synth.rpt -pb LAB2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 28 15:22:06 2025...
